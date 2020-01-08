@@ -132,3 +132,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 LOGIN_URL = '/admin/login/'
 LOGOUT_REDIRECT_URL = 'core:index'
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
